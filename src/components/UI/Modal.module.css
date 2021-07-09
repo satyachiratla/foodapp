@@ -23,11 +23,11 @@
 
 @media (max-width: 40rem) {
   .modal {
-    position: fixed;
-    top: 5vh;
-    left: 5%;
+    position: absolute;
     width: 90%;
     left: calc(50% - 20rem);
+    top: 5vh;
+    left: 5%;
   }
 }
 
