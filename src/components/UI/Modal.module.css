@@ -10,6 +10,7 @@
 
 .modal {
   position: fixed;
+  overflow: auto;
   top: 5vh;
   left: 5%;
   width: 90%;
@@ -25,6 +26,8 @@
   .modal {
     width: 40rem;
     left: calc(50% - 20rem);
+    position: absolute;
+    overflow: auto;
   }
 }
 
