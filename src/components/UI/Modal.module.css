@@ -10,7 +10,6 @@
 
 .modal {
   position: fixed;
-  overflow: auto;
   top: 5vh;
   left: 5%;
   width: 90%;
@@ -22,12 +21,14 @@
   animation: slide-down 300ms ease-out forwards;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 40rem) {
   .modal {
-    width: 40rem;
-    left: calc(50% - 20rem);
     position: absolute;
-    overflow: auto;
+    width: 90%;
+    left: calc(50% - 20rem);
+    top: 5vh;
+    left: 5%;
+    overflow: scroll;
   }
 }
 
