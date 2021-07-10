@@ -10,7 +10,7 @@
 
 .modal {
   position: fixed;
-  top: 15vh;
+  top: 5vh;
   left: 25%;
   width: 50%;
   background-color: white;
@@ -25,7 +25,7 @@
   .modal {
     position: absolute;
     width: 90%;
-    left: calc(50% - 20rem);
+    /* left: calc(50% - 20rem); */
     top: 50vh;
     left: 5%;
   }
