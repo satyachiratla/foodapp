@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mealRoutes = require('./routes/meals');
 const db = require('./DataBase/db');
+require("dotenv").config();
 
 const app = express();
 
@@ -18,4 +19,8 @@ app.use((req, res, next) => {
 
 app.use('/', mealRoutes)
 
-app.listen(8080)
+if (process.env.NODE_ENV === 'production') {
+    
+}
+
+app.listen(process.env.PORT || 8080)
